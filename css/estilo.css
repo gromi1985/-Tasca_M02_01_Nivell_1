@@ -1,0 +1,131 @@
+/*Toda la ventana grafica del navegador*/
+html,body {
+  display: flex;
+  flex-direction: column;
+  /*La pagina ocupara todo el ancho de la pantalla*/
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/*El contenedor principal tendrá un alto del 98% dejando 1% arriba
+y 1% abajo de esta forma centramos nuestro contenedor*/
+.container-main {
+  background-color: rgb(228, 225, 222);
+  height: 98%;
+  width: 70%;
+  margin: 1% auto;
+}
+/*Clase en la que defino el espacio entre linea y linea*/
+.space {
+  height: 1%;
+}
+
+/*Divido la pagina en 5 lineas o bloques, y reparto el 
+100%-(1% de espaciado entre las lineas)*4 = 96%*/
+
+
+/*=============================Linea 1=====================*/
+/*Linea 1.- alto 8% */
+.line-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8%;
+  background: rgb(45, 45, 45);
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+
+/*Cuadrado unico de la cabecera*/
+.cuadrado {
+  height: 50%;
+  width: 20%;
+  background: rgb(214, 211, 211);
+  align-self: center;
+}
+
+/*contenedor de los circulos */
+.contenedor-circulos {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  padding-left: 0;
+  align-items: center;
+  justify-content: flex-end;
+  width: 10%;
+}
+
+/*Circulos de line-one*/
+.circle {
+  width: 20%;
+  height: 0;
+  padding-bottom: 20%;
+  border-radius: 100%;
+  margin: 1%;
+  background: white;
+}
+
+/*=============================Linea 2=====================*/
+
+.second-line {
+  display: flex;
+  flex-direction: row;
+  height: 5%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.dibujar-rectangle-2 {
+  flex-grow: 1;
+  list-style: none;
+  height: 100%;
+  background-color: darkgrey;
+  margin: 0% 0.2% 0%;
+  border: 0px;
+}
+/*=============================Linea 3=====================*/
+
+.third-line {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+ 
+}
+
+.dibujar-rectangle-3 {
+  height: 100%;
+  flex-grow: 1;
+  background-color: rgb(133, 130, 130);
+  margin: 0% 0.2% 0%;
+}
+
+/*=============================Linea 4=====================*/
+.four-line {
+  height: 58%;
+  background: rgb(133, 130, 130);
+}
+.dibujar-rectangle-4 {
+  height: 100%;
+  width: 70%;
+  background: rgb(45, 45, 45);
+  margin: 0px auto;
+}
+/*==============================================================*/
+/*En la second-line y third-line elimino el margen izquierdo del primer elemento*/
+.second-line li:first-child,
+.third-line p:first-child {
+  margin-left: 0px;
+}
+/*En la second-line y third-line elimino el margen derecho del ultimo elemento*/
+.second-line li:last-child,
+.third-line p:last-child {
+  margin-right: 0px;
+}
+/*=============================Linea 5=====================*/
+.five-line {
+  height: 5%;
+  background: rgb(45, 45, 45);
+}
